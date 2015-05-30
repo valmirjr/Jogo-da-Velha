@@ -1,2 +1,29 @@
-Codificação
-Jogo da velha
+import javax.swing.JOptionPane;
+import javax.swing.JButton;
+
+public class Principal extends javax.swing.JFrame {
+
+  int jogadas;
+  int jogador;
+  int mat [] []= new int [3] [3];
+  JButton b [] = new JButton [9];
+  String ganhador;
+  String jogador1;
+  String Jogador2;
+  
+  public Principal () {
+  initComponents ();
+  jogadas=1;
+  jogador=1;
+  
+  b[0] = B1;
+  b[1] = B2;
+  b[2] = B3;
+  b[3] = B4;
+  b[4] = B5;
+  b[5] = B6;
+  b[6] = B7;
+  b[7] = B8;
+  b[8] = B9;
+  
+  
