@@ -25,6 +25,8 @@ public class Principal extends javax.swing.JFrame {
   b[6] = B7;
   b[7] = B8;
   b[8] = B9;
+  }
+  
   
   
   
