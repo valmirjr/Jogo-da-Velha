@@ -27,6 +27,37 @@ public class Principal extends javax.swing.JFrame {
   b[8] = B9;
   }
   
+  public void jogada(Jbutton b, int x, int y){
+  
+    b.setEnabled(false);
+    if (jogador==1)
+      {
+      mat [x][y]=1;
+      b.setText ("X");
+      jogador=2;
+      ganhador= jogador1;
+      checarjogada(1);
+      
+    }else
+      mat [x][y]=2;
+      b.setText("0");
+      jogador=1;
+      ganhador= jogador2;
+      
+    }
+        jogadas++;
+    }
+    
+  public void checarjogada(int x)
+  {
+    if (vitoria (x) == true)
+    {
+      JOptionPane.showMessageDialog(null, "Jogador: " +ganhador+ " " + "Venceu ", "Vitória", JOptionPane.INFORMATION_MESSAGE);
+      fimjogo();
+      
+      }
+  } 
+  
   
   
   
